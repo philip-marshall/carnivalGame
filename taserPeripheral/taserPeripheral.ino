@@ -1,4 +1,8 @@
-#include <ArduinoBLE.h>
+// Code by Philip Marshall - 8/23/2021
+// BLE peripheral for carnival project. Connects to central device (raspberry pi) and advertises a relay characteristic that can be read and written.
+// Once it is written with a bytearray of 1, it will activate a relay connected to the taser
+// Code adapted from Protostax Arduino Nano BLE RGB LED Service found at: https://github.com/protostax/ProtoStax_Arduino_Nano_BLE_RGBLED_Service/blob/main/rgbBLE_Central.py
+#include <ArduinoBLE.h>t
 
  #define RELAY A0  
  #define RHIGH 1
